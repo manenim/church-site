@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { Squash as Hamburger } from 'hamburger-react'
+import { useRouter } from 'next/router'
 
 
 
 
 const Navbar = () => {
-    const [isOpen, setOpen] = useState(false)
 
-    
+      const router = useRouter()
+
 
   return (
       <nav className='absolute mt-10 w-screen'>
@@ -17,10 +18,10 @@ const Navbar = () => {
                   <div className="text-[1.5rem] font-bold">LOGO.</div>
                   {/* <Hamburger size={20} toggled={isOpen} toggle={setOpen}/> */}
                   <ul className="hidden items-center justify-between md:flex">
-                      <li><Link className='' href = '/'>Home</Link></li>
-                      <li className='ml-10'><Link className='' href = '/about'>About</Link></li>
-                      <li className='ml-10'><Link className='' href = '/#'>Blog</Link></li>
-                      <li className='mx-10'><Link className='' href = '/contact'>Contact</Link></li>
+                      <li><Link className={'' + router.asPath == "/" ? 'font-semibold' : ''} href = '/'>Home</Link></li>
+                      <li className='ml-10'><Link className={'' + router.asPath == "/about" ? 'font-semibold' : ''} href = '/about'>About</Link></li>
+                      <li className='ml-10'><Link className={'' + router.asPath == "/blog" ? 'font-semibold' : ''} href = '/#'>Blog</Link></li>
+                      <li className='mx-10'><Link className={'' + router.asPath == "/contact" ? 'font-semibold' : ''} href = '/contact'>Contact</Link></li>
                   </ul>
               </div>
           </div>

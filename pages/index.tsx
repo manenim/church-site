@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Contact from '../components/about/Contact'
 import Blog from '../components/general/Blog'
 import Footer from '../components/general/Footer'
@@ -13,6 +14,8 @@ import Support from '../components/home/Support'
 import Trending from '../components/home/Trending'
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <div className='font-primary'>
       <Head>
