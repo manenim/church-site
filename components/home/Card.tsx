@@ -7,7 +7,7 @@ type Prop = {
 
 const Card = ({title}: Prop) => {
     return (
-            <div className='flex flex-col items-start justify-center bg-[rgb(255,255,255)] p-[1.4rem] drop-shadow-[rgba(87, 87, 87, 0.459)] drop-shadow-xl lg:flex-row lg:p-[2.5rem]'>
+            <div className='flex flex-col items-start justify-center bg-[rgb(255,255,255)] p-[1.4rem] shadow-xl lg:flex-row lg:p-[2.5rem]'>
                 <RiFilePaper2Line className='mr-[1.25rem] mb-2 text-8xl text-secondary lg:mb-0'/>
                 
                 <div className="">

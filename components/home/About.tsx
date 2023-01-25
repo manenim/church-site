@@ -39,13 +39,13 @@ const About = () => {
               </div>
           </div>
 
-            <div className="relative hidden w-[42%] lg:block">
+            <div className="relative hidden w-[42%] shadow-2xl lg:block">
               <Image 
                 src="/assets/img/aboutsec/1.jpg"
                 fill
                 alt="aboutpic"
 
-                className="rounded-b-[0px] rounded-tl-[150px] object-cover object-center"
+                className="rounded-[20px] object-cover object-center shadow-2xl"
               />
             </div>
         </div>
