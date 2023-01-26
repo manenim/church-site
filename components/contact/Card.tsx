@@ -4,7 +4,7 @@ import { FiArrowRight, FiPhoneCall, FiSend } from 'react-icons/fi'
 
 const Card = () => {
   return (
-    <div className='flex flex-col justify-between bg-[#fafafa] px-4 pt-[8%] md:px-6 lg:flex-row lg:px-32'>
+    <div className='flex flex-col justify-between bg-[#fafafa] px-4 pt-[8%] md:px-6 lg:flex-row lg:px-32 pb-36'>
         <div className='flex w-full flex-col items-center border-2 pt-12 lg:w-[calc(94%/3)]'>
             <p className="relative mb-4 inline-flex items-center text-[16px] font-extrabold uppercase text-secondary">Send Email<FiArrowRight className='ml-[.5rem]' /></p> 
             <p className='mb-4 text-2xl font-bold'>Email Adress</p>
